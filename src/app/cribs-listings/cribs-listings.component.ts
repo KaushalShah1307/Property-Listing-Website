@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { cribs } from './../data/cribs';
 
 @Component({
   selector: 'app-cribs-listings',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cribs-listings.component.css']
 })
 export class CribsListingsComponent implements OnInit {
+
+  cribs: Array<any> = cribs;
 
   constructor() { }
 
